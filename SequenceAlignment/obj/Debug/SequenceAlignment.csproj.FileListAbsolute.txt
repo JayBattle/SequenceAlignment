@@ -1,0 +1,6 @@
+c:\users\4399battlej\documents\visual studio 2015\Projects\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.exe.config
+c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.exe
+c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.pdb
+c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.csprojResolveAssemblyReference.cache
+c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.exe
+c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.pdb
