@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SequenceAlignment {
     class Program {
-        public static int DebugLevel = int.MaxValue;
+        public static int DebugLevel = 5;
         public static bool AutoDebug = true;
         static void Main(string[] args) {
 
@@ -36,7 +36,7 @@ namespace SequenceAlignment {
 
             string outputFileName;
             Console.WriteLine("Please input the target sequence as string: ");
-            if (AutoDebug) outputFileName = "CostMatrix.txt"; //TAT
+            if (AutoDebug) outputFileName = "CostMatrixOut.txt"; //TAT
             else outputFileName = Console.ReadLine();
 
             int numRows = seqInputLength + 2;
@@ -44,16 +44,16 @@ namespace SequenceAlignment {
             string[,] costMatrix = createEmptyCostMatrix(seqInput, seqTarget, numRows, numCols);
             costMatrix = prepCostMatrix(costMatrix, numRows, numCols);
             costMatrix = fillCostMatrix(costMatrix, numRows, numCols);
-            string optimalAlignment = solveCostMatrix(costMatrix, numRows, numCols);
-            exportMatrix(costMatrix, numRows, numCols, outputFileName);
+            string seqAligned = solveCostMatrix(costMatrix, numRows, numCols);
+            exportMatrix(costMatrix, numRows, numCols, seqInput, seqTarget, seqAligned, Convert.ToInt32(costMatrix[1, 1]), outputFileName);
 
             Console.WriteLine("Press any key to exit... ");
             Console.ReadKey();
         }
 
-        public static int checkInt(string currIntString) {
+        public static int checkInt(string intAsString) {
             int currInt;
-            if (Int32.TryParse(currIntString, out currInt)) return currInt;
+            if (Int32.TryParse(intAsString, out currInt)) return currInt;
             else {
                 Console.WriteLine("Input was not an integer!");
                 Console.WriteLine("Press any key to exit... ");
@@ -93,7 +93,7 @@ namespace SequenceAlignment {
             for (int col = 1; col <= target.Length; col++) {
                 matrix[0, col] = Convert.ToString(target[col - 1]);
             }
-            if (DebugLevel > 1) printMatrix(matrix, numRows, numCols);
+            if (DebugLevel > 2) printMatrix(matrix, numRows, numCols);
             return matrix;
         }
 
@@ -108,7 +108,7 @@ namespace SequenceAlignment {
                 matrix[numRows - 1, col] = Convert.ToString(costLevel);
                 costLevel += 2;
             }
-            if (DebugLevel > 2) printMatrix(matrix, numRows, numCols);
+            if (DebugLevel > 3) printMatrix(matrix, numRows, numCols);
             return matrix;
         }
 
@@ -127,12 +127,12 @@ namespace SequenceAlignment {
                     if (DebugLevel > 4) Console.WriteLine(matrix[row, col]);
                 }
             }
-            if (DebugLevel > 3) printMatrix(matrix, numRows, numCols);
+            if (DebugLevel > 1) printMatrix(matrix, numRows, numCols);
             return matrix;
         }
 
         private static string solveCostMatrix(string[,] matrix, int numRows, int numCols) {
-            string optimalString = "";
+            string aligned = "";
             int row = 1;
             int col = 1;
             int cost = 0;//Convert.ToInt32(matrix[row + 1, col + 1]);
@@ -160,7 +160,7 @@ namespace SequenceAlignment {
                     nextChar = "-"; //insert char
                     row++;
                 }
-                optimalString += nextChar;
+                aligned += nextChar;
                 if (DebugLevel > 6) Console.WriteLine("Curr Cost = " + cost);
                 if (DebugLevel > 6) Console.WriteLine(nextChar);
             }
@@ -168,7 +168,7 @@ namespace SequenceAlignment {
                 while (col != numCols) {
                     cost += 2;
                     col++;
-                    optimalString += "-";
+                    aligned += "-";
                     if (DebugLevel > 6) Console.WriteLine("Curr Cost = " + cost);
                     if (DebugLevel > 6) Console.WriteLine(nextChar);
                 }
@@ -176,14 +176,14 @@ namespace SequenceAlignment {
                 while (row != numRows - 1) {
                     cost += 2;
                     row++;
-                    optimalString += "-";
+                    aligned += "-";
                     if (DebugLevel > 6) Console.WriteLine("Curr Cost = " + cost);
                     if (DebugLevel > 6) Console.WriteLine(nextChar);
                 }
             }
-            if (DebugLevel > 5) Console.WriteLine(optimalString);
-            if (DebugLevel > 5) Console.WriteLine("Total Cost = " + cost);
-            return optimalString;
+            if (DebugLevel > 1) Console.WriteLine(aligned);
+            if (DebugLevel > 1) Console.WriteLine("Total Cost = " + cost);
+            return aligned;
         }
 
         private static int getMin(ArrayList values) {
@@ -194,16 +194,20 @@ namespace SequenceAlignment {
             return minimum;
         }
 
-        public static void exportMatrix(string[,] matrix, int numRows, int numCols, string fileName) {
+        public static void exportMatrix(string[,] matrix, int numRows, int numCols, string input, string target, string aligned, int cost, string fileName) {
             if (File.Exists(fileName)) File.Delete(fileName);
-            string[] matrixLines = new string[numRows];
+            string[] outputLines = new string[numRows + 4];
+            outputLines[0] = ("Input String: " + input);
+            outputLines[1] = ("Target String: " + target);
+            outputLines[2] = ("Aligned String: " + aligned);
+            outputLines[3] = ("Cost: " + cost);
             for (int row = 0; row < numRows; row++) {
                 for (int col = 0; col < numCols; col++) {
-                    if (matrix[row, col] == null) matrixLines[row] += "-";
-                    matrixLines[row] += (matrix[row, col] + " ");
+                    if (matrix[row, col] == null) outputLines[row + 4] += "-";
+                    outputLines[row + 4] += (matrix[row, col] + " ");
                 }
             }
-            File.WriteAllLines(fileName, matrixLines);
+            File.AppendAllLines(fileName, outputLines);
         }
 
 
