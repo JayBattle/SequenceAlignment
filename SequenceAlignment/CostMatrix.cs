@@ -15,12 +15,12 @@ namespace SequenceAlignment {
         public static int AlignmentCost;
         private static int debugLevel => 2;
 
-        public CostMatrix(string inputSequence, string targetSequence, int numRows, int numCols) {
+        public CostMatrix(string inputSequence, string targetSequence) {
             InputSequence = inputSequence;
             TargetSequence = targetSequence;
-            NumRows = numRows;
-            CostMatrix.NumCols = numCols;
-            Matrix = new string[NumRows, CostMatrix.NumCols];
+            NumRows = inputSequence.Length + 2;
+            NumCols = targetSequence.Length + 2;
+            Matrix = new string[NumRows, NumCols];
             AddSequences();
             PrepCostMatrix();
             FillCostMatrix();
@@ -113,7 +113,8 @@ namespace SequenceAlignment {
                 if (debugLevel > 6) Console.WriteLine("Curr Cost = " + AlignmentCost);
                 if (debugLevel > 6) Console.WriteLine(nextChar);
             }
-            if (row == NumRows - 1) {
+            if (row == col) AlignmentCost += 0;
+            else if (row == NumRows - 1) {
                 while (col != NumCols) {
                     AlignmentCost += 2;
                     col++;

@@ -5,7 +5,7 @@ Author: Jay Battle
 Course: BIEN 4290
 Refrences: My alma mater
 Languages: C# 
-Platform: Command Line, .Net Core
+Platform: Command Line, .Net Core Console App
 Dev Enviorment: Visual Studio 2017
 Purpose: Class C# Project
 Status: In Development

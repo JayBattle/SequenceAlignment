@@ -4,9 +4,10 @@ c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\Seq
 c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.csprojResolveAssemblyReference.cache
 c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.exe
 c:\Users\4399battlej\Documents\Visual Studio 2015\Projects\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.pdb
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.exe.config
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.exe
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.pdb
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.csprojResolveAssemblyReference.cache
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.exe
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.pdb
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.dll.config
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Debug\SequenceAlignment.dll
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.dll
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Debug\SequenceAlignment.exe

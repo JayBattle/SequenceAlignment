@@ -1,0 +1,6 @@
+Input String: 
+Target String: 
+Aligned String: 
+Cost: 0
+- - 
+- 0 

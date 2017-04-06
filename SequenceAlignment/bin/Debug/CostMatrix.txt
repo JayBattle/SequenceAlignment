@@ -1,11 +1,10 @@
-Input String: AACAG
-Target String: TAA
-Aligned String: TA-A-
-Cost: 5
-- T A A - 
-A 5 6 8 10 
-A 4 4 6 8 
-C 2 3 4 6 
-A 3 1 2 4 
-G 5 3 1 2 
-- 6 4 2 0 
+Input String: tttt
+Target String: tttt
+Aligned String: tttt-
+Cost: 2
+- t t t t - 
+t 0 2 4 6 8 
+t 2 0 2 4 6 
+t 4 2 0 2 4 
+t 6 4 2 0 2 
+- 8 6 4 2 0 
