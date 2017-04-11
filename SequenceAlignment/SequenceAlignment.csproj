@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{57B87DB2-EF43-4BA8-AA62-FC831554116D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SequenceAlignment</RootNamespace>
     <AssemblyName>SequenceAlignment</AssemblyName>

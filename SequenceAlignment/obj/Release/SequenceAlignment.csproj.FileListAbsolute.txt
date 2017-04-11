@@ -1,10 +1,10 @@
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.pdb
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.csprojResolveAssemblyReference.cache
+C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.pdb
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.exe.config
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.exe.manifest
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.application
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.exe
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\bin\Release\SequenceAlignment.pdb
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.csprojResolveAssemblyReference.cache
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.exe.manifest
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.application
 C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.exe
-C:\Users\Jalen\Dropbox\Classes\Code\Repos\SequenceAlignment\SequenceAlignment\obj\Release\SequenceAlignment.pdb

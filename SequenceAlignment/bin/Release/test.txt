@@ -1,0 +1,9 @@
+Input String: hel
+Target String: low!
+Aligned String: -ow!-
+Cost: 7
+- l o w ! - 
+h 5 3 4 5 6 
+e 6 4 2 3 4 
+l 6 5 3 1 2 
+- 8 6 4 2 0 

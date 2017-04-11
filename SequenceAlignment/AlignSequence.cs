@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace SequenceAlignment {
-    class AlignSequence {
+    public class AlignSequence {
 
         //run on ubuntu.16.04-x64
         private static int debugLevel => 2;
