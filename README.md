@@ -39,6 +39,6 @@ Run Instructions:
 	run the following command: ./SequenceAlignment.dll
 
 Runtime Instructions: 
-	Follow the prompts manually typing in the proper responces
+	Follow the prompts manually typing in the proper responses
 	The output of the program is stored to \SequenceAlignment\SequenceAlignment\bin\Debug unless
 	otherwise specified
